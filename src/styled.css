@@ -1,0 +1,52 @@
+/* styled.css */
+.estampa-frente {
+  position: relative;
+  z-index: 2;
+  max-width: 120px;
+  left: -140%;
+  bottom: 50px;
+}
+
+.estampa-costas {
+  position: relative;
+  z-index: 2;
+  max-width: 120px;
+  left: 140%;
+  bottom: 50px;
+}
+
+.tshirt-container {
+  position: relative;
+  background-image: url('./assets/camisetabrancafrente.png');
+  width: 300px;
+  aspect-ratio: 0.77;
+  background-size: cover;
+  -webkit-mask-image: url('./assets/camisetabrancafrente.png');
+  mask-image: url('./assets/camisetabrancafrente.png');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.costas {
+  background-image: url('./assets/camisetabrancacostas.png');
+  -webkit-mask-image: url('./assets/camisetabrancacostas.png');
+  mask-image: url('./assets/camisetabrancacostas.png');
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+  .tshirt-container {
+    width: 80%;
+    aspect-ratio: 0.77;
+  }
+}
+
+/* Estilos para telas muito pequenas, como smartphones */
+@media screen and (max-width: 480px) {
+  .tshirt-container {
+    width: 100%;
+    aspect-ratio: 0.77;
+  }
+}
